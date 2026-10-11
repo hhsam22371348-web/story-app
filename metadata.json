@@ -1,0 +1,6 @@
+{
+  "name": "Feelings Detective! - Milo's Missing Smile",
+  "description": "An interactive English picture-book app for Grade 3–4 learners to explore emotions, find visual clues, and practice empathy.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
