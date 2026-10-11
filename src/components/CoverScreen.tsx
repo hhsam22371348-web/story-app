@@ -55,6 +55,12 @@ export const CoverScreen: React.FC<CoverScreenProps> = ({
             src={COVER_IMAGE}
             alt="Milo the rabbit holding a magnifying glass in a sunny park with flowers"
             className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+            onError={(e) => {
+              const target = e.currentTarget;
+              if (!target.src.endsWith('/images/milo_cover_story.jpg')) {
+                target.src = '/images/milo_cover_story.jpg';
+              }
+            }}
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-amber-950/40 via-transparent to-transparent pointer-events-none" />

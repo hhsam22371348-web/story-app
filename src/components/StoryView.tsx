@@ -232,6 +232,21 @@ export const StoryView: React.FC<StoryViewProps> = ({
             src={page.illustrationUrl}
             alt={page.illustrationAlt}
             className="w-full h-full object-cover transition-transform duration-500"
+            onError={(e) => {
+              const target = e.currentTarget;
+              // Fallback to static public image if needed
+              if (page.pageNumber === 1 && !target.src.endsWith('/images/milo_picnic_happy.jpg')) {
+                target.src = '/images/milo_picnic_happy.jpg';
+              } else if (page.pageNumber === 7 || page.pageNumber === 8) {
+                if (!target.src.endsWith('/images/milo_friends_sharing.jpg')) {
+                  target.src = '/images/milo_friends_sharing.jpg';
+                }
+              } else {
+                if (!target.src.endsWith('/images/milo_missing_smile.jpg')) {
+                  target.src = '/images/milo_missing_smile.jpg';
+                }
+              }
+            }}
             referrerPolicy="no-referrer"
           />
 

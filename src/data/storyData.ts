@@ -1,12 +1,17 @@
 import { StoryPage, EmotionWordDef } from '../types/story';
 
+import coverImg from '../assets/images/milo_cover_story_1791693357879.jpg';
+import picnicHappyImg from '../assets/images/milo_picnic_happy_1791693369601.jpg';
+import worriedBenchImg from '../assets/images/milo_missing_smile_1791693389912.jpg';
+import friendsSharingImg from '../assets/images/milo_friends_sharing_1791693399257.jpg';
+
 export const STORY_TITLE = "Milo's Missing Smile";
 export const STORY_SUBTITLE = "A Feelings Detective Mystery";
 
-export const COVER_IMAGE = "/src/assets/images/milo_cover_story_1791693357879.jpg";
-export const PICNIC_HAPPY_IMAGE = "/src/assets/images/milo_picnic_happy_1791693369601.jpg";
-export const WORRIED_BENCH_IMAGE = "/src/assets/images/milo_missing_smile_1791693389912.jpg";
-export const FRIENDS_SHARING_IMAGE = "/src/assets/images/milo_friends_sharing_1791693399257.jpg";
+export const COVER_IMAGE = coverImg;
+export const PICNIC_HAPPY_IMAGE = picnicHappyImg;
+export const WORRIED_BENCH_IMAGE = worriedBenchImg;
+export const FRIENDS_SHARING_IMAGE = friendsSharingImg;
 
 export const EMOTION_VOCABULARY: EmotionWordDef[] = [
   {
